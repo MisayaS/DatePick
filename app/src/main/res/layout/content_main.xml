@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.haibuzou.datepick.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.haibuzou.datepick.DragViewGroup
+        android:id="@+id/hehe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.haibuzou.datepick.views.MonthView
+            android:id="@+id/main_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/first_head" />
+
+            <include layout="@layout/attendance_item" />
+
+            <include layout="@layout/attendance_item" />
+
+            <include layout="@layout/attendance_item" />
+
+            <include layout="@layout/attendance_item" />
+
+            <include layout="@layout/attendance_item" />
+
+            <include layout="@layout/attendance_item" />
+
+            <include layout="@layout/attendance_item" />
+
+            <include layout="@layout/attendance_item" />
+
+            <include layout="@layout/attendance_item" />
+        </LinearLayout>
+    </com.haibuzou.datepick.DragViewGroup>
+</RelativeLayout>
